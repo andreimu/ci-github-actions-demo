@@ -22,4 +22,4 @@ jobs:
         run: pip install -r requirements.txt || true
 
       - name: Run tests
-        run: python -m unittest ./tests/test_main.py 2>&1 | tee test_results.log
+        run: python -m unittest discover tests -v
